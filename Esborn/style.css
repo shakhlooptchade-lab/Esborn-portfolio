@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0f19;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+header {
+  background: #141b2d;
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+/* Home Section */
+.home {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home span {
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Picture Holder */
+.picture-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.picture-box {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #4f46e5;
+}
+
+.picture-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About */
+.about, .projects, .contact {
+  padding: 60px 10%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4f46e5;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  background: #141b2d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project-icon {
+  font-size: 40px;
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #1a243a;
+  border: none;
+  color: #e2e8f0;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #141b2d;
+  margin-top: 20px;
+}
